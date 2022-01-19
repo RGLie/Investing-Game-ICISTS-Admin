@@ -148,7 +148,7 @@ class _TradeManagePageState extends State<TradeManagePage> {
                   return Center(child: CircularProgressIndicator());
                 }
                 Map<String, dynamic> price_data = snapshot.data.data();
-                trade_price=price_data['price_now'];
+
                 return OutlinedButton(
                   onPressed: () async{
                     int check=1;
@@ -319,7 +319,7 @@ class _TradeManagePageState extends State<TradeManagePage> {
                       }
                     }
 
-
+                    print('Finish');
 
                   },
                   child: Text('거래 처리하기', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
